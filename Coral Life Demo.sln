@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coral Life Demo.CSharp.Plugins", "Coral Life Demo.CSharp.Plugins.csproj", "{3A9650EC-C0FA-8733-D93A-EE6CD8DB12CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coral Life Demo.CSharp", "Coral Life Demo.CSharp.csproj", "{470B08A5-D92B-7AA9-5094-1ED6C3C0BBD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A9650EC-C0FA-8733-D93A-EE6CD8DB12CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9650EC-C0FA-8733-D93A-EE6CD8DB12CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9650EC-C0FA-8733-D93A-EE6CD8DB12CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9650EC-C0FA-8733-D93A-EE6CD8DB12CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470B08A5-D92B-7AA9-5094-1ED6C3C0BBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470B08A5-D92B-7AA9-5094-1ED6C3C0BBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470B08A5-D92B-7AA9-5094-1ED6C3C0BBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470B08A5-D92B-7AA9-5094-1ED6C3C0BBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

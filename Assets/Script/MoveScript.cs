@@ -46,7 +46,7 @@ public class MoveScript : MonoBehaviour {
         }
         
 		if (!landed) {
-			if (Input.GetKey (KeyCode.UpArrow)) {
+			if (Input.GetKey (KeyCode.UpArrow) || Input.GetAxis("Vertical" ) > 0) {
 				forwardMoveSpeedPrivate = forwardMoveSpeed + addForwardSpeed;
 			}else
 			{
@@ -120,7 +120,7 @@ public class MoveScript : MonoBehaviour {
     bool landingKeyPress()
     {
         bool Pressed = false;
-        if (Input.GetKey(KeyCode.X))
+        if (Input.GetKey(KeyCode.X) || Input.GetKey(KeyCode.Joystick1Button0)) //button 0 = A, button 2 = X
         {
             horizontalMoveSpeed = 0;
             forwardMoveSpeedPrivate = 0;

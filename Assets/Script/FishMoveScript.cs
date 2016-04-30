@@ -12,7 +12,7 @@ public class FishMoveScript : MonoBehaviour {
 
 	public int chanceBackToCave = 6;
 	public float moveSpeed = 2f;
-	public float moveSpeed_NoTarget = 0.05f;
+	public float moveSpeed_NoTarget = 2f;
 
 	private GameObject target;
 	private bool targetLocked = false;
@@ -50,11 +50,11 @@ public class FishMoveScript : MonoBehaviour {
 		if (targetLocked) {
 			//target in the hunting area, hunt target
 			transform.LookAt(target.transform);
-			transform.position = Vector3.Lerp (transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+			transform.position = Vector3.MoveTowards (transform.position, target.transform.position, moveSpeed * Time.deltaTime);
 		} else {
 			//randomly moving
 			transform.LookAt(direction);
-			transform.position = Vector3.Lerp(transform.position, direction, moveSpeed_NoTarget * Time.deltaTime);
+			transform.position = Vector3.MoveTowards(transform.position, direction, moveSpeed_NoTarget * Time.deltaTime);
 		}
 	}
 
